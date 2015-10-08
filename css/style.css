@@ -57,7 +57,7 @@ nav h1 a{
 .content{
     padding: 20px;
 }
-
+.content a{ color: #666; }
 .content ul{
     margin: 0;
     padding: 0;

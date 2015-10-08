@@ -1,3 +1,7 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+    padding-top: 40px;
+}
 nav h1{
     width: 235px; height: 55px;
     background: url("img/logo.png") no-repeat;
@@ -20,13 +24,49 @@ nav h1 a{
     float:right;
 }
 .navbar-nav > li > a{
-    color:#97979a;
+    color:#868689;
     border-right: 1px solid #97979a;
-    padding:9px 15px;
+    padding:7px 15px;
 }
 .navbar-nav > li.active > a, .navbar-nav > li > a:hover{
     color:#9a394e;
-    border-right: 1px solid #9a394e;
-    padding:9px 15px;
+    border-right: 2px solid #9a394e;
     background:none;
+    font-weight:bold;
+}
+.navbar-collapse{
+    padding:0;
+}
+
+.main-banner{
+    height:210px;
+    background: #b2b2b2;
+    margin-bottom:3px;
+}
+.page-title{
+    background:#58585a;
+    padding:8px 22px;
+}
+.page-title h2{
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+    font-weight: bold;
+}
+
+.content{
+    padding: 20px;
+}
+
+.content ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.content ul li{
+    padding-left: 15px;
+    background: url("img/li.png") 0 4px no-repeat;
+}
+.content ul ul{
+    padding-left: 30px;
 }

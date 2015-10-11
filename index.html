@@ -31,13 +31,15 @@
             <nav class="navbar" role="navigation">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only">Tapie Castañeda</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-		</button>
 		<h1><a href="#">Tapie Castañeda Firma de Abogados</a></h1>
+		<select class="navbar-toggle col-xs-11 navigation-select" onchange="redirectPage(this)">
+		  <option value="1">La Firma</option>
+		  <option value="2">Servicios</option>
+		  <option value="3">|-- Servicio 1</option>
+		  <option value="4">|-- Servicio 2</option>
+		  <option value="5">|-- La FirmaServicio con un texto muy largo que abarca mucho espacio</option>
+		  <option>Contacto</option>
+		</select>
               </div>
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -104,7 +106,11 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-hover-dropdown.min.js"></script>
-
+    <script>
+      function redirectPage(select){
+        window.location.href = 'url' + $(select).val(); 
+      }
+    </script>
   </body>
 
 </html>

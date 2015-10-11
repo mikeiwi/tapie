@@ -19,6 +19,12 @@ nav h1 a{
 .navbar-header{
     float: none;
 }
+.navigation-select{
+    border: 1px solid #eee;
+}
+.navigation-select option{
+    padding: 5px 10px;
+}
 
 .navbar-nav{
     float:right;

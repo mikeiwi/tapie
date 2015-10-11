@@ -37,17 +37,30 @@ nav h1 a{
     padding:0;
 }
 
+.navbar-nav .triangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 9px 10px 9px;
+    border-color: transparent transparent #444 transparent;
+    background: none;
+    margin-left: 70px;
+}
 .navbar-nav > li ul{
-    background: transparent url('img/dropdown-overlay.png');
-    font-size: .8em;
+    background-color: transparent;
     font-weight: bold;
     border-radius: 0;
+    left: -50%;
+    margin-left: 8px;
+    border: none;
+    box-shadow: none;
 }
 .navbar-nav > li ul li{
     border-bottom: 1px solid #000;
     border-top: 1px solid #444;
+    background: transparent url('img/dropdown-overlay.png');
 }
-.navbar-nav > li ul li:first-child{
+.navbar-nav > li ul li:nth-child(2){
     border-top: none;
 }
 .navbar-nav > li ul li:last-child{
@@ -56,9 +69,10 @@ nav h1 a{
 .navbar-nav > li ul a{
     color: #aaa;
     word-wrap: break-word;
-    width: 160px;
+    width: 120px;
     white-space: normal;
-    padding: 5px 10px;
+    padding: 5px 15px;
+    font-size: 12px;
 }
 .navbar-nav > li ul a:hover{
     background: none;
@@ -83,6 +97,7 @@ nav h1 a{
 
 .content{
     padding: 20px;
+    text-align: justify;
 }
 .content a{ color: #666; }
 .content ul{

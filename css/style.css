@@ -28,13 +28,41 @@ nav h1 a{
     border-right: 1px solid #97979a;
     padding:7px 15px;
 }
-.navbar-nav > li.active > a, .navbar-nav > li > a:hover{
+.navbar-nav > li.active > a, .navbar-nav > li > a:hover, .navbar-nav > li > a.dropdown-toggle:hover, .navbar-nav > li.open > a.dropdown-toggle{
     color:#9a394e;
     border-right: 1px solid #9a394e;
     background:none;
 }
 .navbar-collapse{
     padding:0;
+}
+
+.navbar-nav > li ul{
+    background: transparent url('img/dropdown-overlay.png');
+    font-size: .8em;
+    font-weight: bold;
+    border-radius: 0;
+}
+.navbar-nav > li ul li{
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #444;
+}
+.navbar-nav > li ul li:first-child{
+    border-top: none;
+}
+.navbar-nav > li ul li:last-child{
+    border-bottom: none;
+}
+.navbar-nav > li ul a{
+    color: #aaa;
+    word-wrap: break-word;
+    width: 160px;
+    white-space: normal;
+    padding: 5px 10px;
+}
+.navbar-nav > li ul a:hover{
+    background: none;
+    color: #fff;
 }
 
 .main-banner{
